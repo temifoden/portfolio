@@ -1,0 +1,22 @@
+.image-wrapper {
+  width: 100%; /* Ensures the image takes full width */
+  height: auto; /* Maintains aspect ratio */
+}
+
+.hero-image {
+  max-width: 100%; /* Ensures no overflow */
+  height: auto; /* Maintains aspect ratio */
+}
+
+.hero-title {
+  font-size: 3.8rem;
+  letter-spacing: 1.28px;
+  font-weight: var(--font-weight-bold);
+  line-height: 70.4px;
+  margin-bottom: 1.56rem;
+}
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2.25rem;
+  }
+}

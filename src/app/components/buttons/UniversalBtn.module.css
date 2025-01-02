@@ -1,0 +1,30 @@
+/* UniversalBtn.module.css */
+.universal-btn {
+  display: inline-block;
+  padding: 12px 16px;
+  background-color: var(--text-color);
+  color: var(--bg-color);
+  border: 1px solid var(--text-color);
+  border-radius: 36px;
+  font-size: 1rem;
+  font-weight: var(--font-weight-medium);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.universal-btn:hover {
+  background-color: var(--primary-color);
+  color: var(--bg-color);
+  border-color: var(--secondary-color);
+}
+
+.universal-btn.primary {
+  background-color: transparent;
+  color: var(--text-color);
+}
+
+.universal-btn.primary:hover {
+  background-color: var(--primary-color);
+  color: var(--bg-color);
+  border-color: var(--secondary-color);
+}

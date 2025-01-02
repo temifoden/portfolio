@@ -1,0 +1,55 @@
+/* General Styling */
+.two-column-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+  border-top: 1px solid #e0e0e0; /* Optional top border */
+  padding: 2rem; /* Adjust spacing */
+  gap: 4rem; /* Space between the columns */
+  position: relative; /* For the dividing line */
+}
+
+/* Individual Column Styling */
+.column {
+  flex: 1; /* Equal width */
+  padding: 1rem; /* Adjust padding */
+}
+
+.column-left {
+  text-align: left;
+}
+
+.column-right {
+  text-align: left;
+}
+
+/* Vertical Divider */
+.two-column-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 1px;
+  background-color: #e0e0e0; /* Faint line color */
+  transform: translateX(-50%);
+  z-index: -1;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .two-column-section {
+    flex-direction: column;
+    gap: 2rem; /* Adjust for stacked spacing */
+  }
+
+  .two-column-section::before {
+    display: none; /* Hide dividing line on small screens */
+  }
+
+  .column-left,
+  .column-right {
+    text-align: center; /* Center text when stacked */
+  }
+}
