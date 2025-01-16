@@ -85,6 +85,7 @@ const styles = {
     backgroundColor: "var(--bg-color)",
     color: "var(--text-color)",
     boxShadow: "0 2px 5px rgba(0, 0, 0, 0.1)",
+    borderBottom: "1px solid #aaaadd",
   },
   logo: {
     fontSize: "1.5rem",

@@ -1,0 +1,15 @@
+.form-wrapper {
+}
+.formHead {
+  font-size: 40px;
+  font-weight: var(--font-weight-bold);
+  color: var(--bg-color);
+}
+.formDesc {
+  font-size: 18px;
+  font-weight: var(--font-weight-regular);
+  color: #c6c6d7;
+}
+
+@media (max-width: 768px) {
+}

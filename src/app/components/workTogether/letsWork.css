@@ -1,0 +1,34 @@
+.workWithMeBtn {
+  /* margin: "210px 32px"; */
+}
+
+.workWithLeftIcon {
+  width: 32px;
+  height: 32px;
+  margin-right: 24px;
+}
+
+.workWithMeText {
+  font-size: 18px;
+  margin-right: 11px;
+}
+.workWithRightIcon {
+  width: 32px;
+  height: 32px;
+  color: "var(--shoot-up-arrow)";
+}
+
+@media screen and (max-width: 768px) {
+  .workWithLeftIcon {
+    width: 24px;
+    height: 24px;
+    margin-right: 12px;
+  }
+  .workWithMeText {
+    font-size: 16px;
+  }
+  .workWithRightIcon {
+    width: 24px;
+    height: 24px;
+  }
+}

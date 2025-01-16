@@ -1,15 +1,15 @@
 import Image from "next/image";
 import React from "react";
 import "./Hero.css";
-import UniversalBtn from "../../buttons/UniversalBtn";
+import UniversalBtn from "../../components/buttons/UniversalBtn";
 import { TfiArrowTopRight } from "react-icons/tfi";
 
 const Hero = () => {
   return (
     <div>
-      <div className="row g-4">
+      <div className="row ">
         <div
-          className=" col col-12 col-md-6 "
+          className="col col-12 col-md-6"
           style={{ fontWeight: "var( --font-weight-bold)" }}
         >
           <div className="hero-title">
@@ -68,7 +68,7 @@ const Hero = () => {
         <div className="col col-12 col-md-6">
           <div className="image-wrapper">
             <Image
-              src="/images/act.jpeg"
+              src="/images/actor.svg"
               alt="Actor Illustration"
               layout="responsive"
               width={500}

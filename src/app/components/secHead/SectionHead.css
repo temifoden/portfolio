@@ -1,0 +1,40 @@
+.secHead1 {
+  font-weight: var(--font-weight-medium);
+  font-size: 14px;
+  letter-spacing: 2%;
+  line-height: 22.4px;
+  margin-bottom: 24px;
+}
+.secHead2 {
+  font-weight: var(--font-weight-bold);
+  font-size: 48px;
+  line-height: 52.8px;
+  letter-spacing: -1.5%;
+  margin-bottom: 8px;
+}
+.secDesc {
+  font-size: 18px;
+  font-weight: var(--font-weight-regular);
+  line-height: 27px;
+}
+@media (max-width: 768px) {
+  .secHead1 {
+    font-weight: var(--font-weight-medium);
+    font-size: 12px;
+    letter-spacing: 2%;
+    line-height: 19.2px;
+    margin-bottom: 16px;
+  }
+  .secHead2 {
+    font-weight: var(--font-weight-bold);
+    font-size: 30px;
+    line-height: 33px;
+    letter-spacing: -1.5%;
+    margin-bottom: 4px;
+  }
+  .secDesc {
+    font-size: 14px;
+    font-weight: var(--font-weight-regular);
+    line-height: 21px;
+  }
+}

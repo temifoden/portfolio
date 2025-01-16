@@ -1,0 +1,94 @@
+/* General Styling */
+.two-column-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+  padding: 2rem 0; /*Adjust spacing*/
+  gap: 4rem; /* Space between the columns */
+  position: relative; /* For the dividing line */
+}
+
+/* Individual Column Styling */
+.column {
+  flex: 1; /* Equal width */
+  /* padding: 1rem; Adjust padding */
+}
+
+.column-left {
+  text-align: left;
+}
+
+.column-right {
+  text-align: left;
+}
+
+/* Vertical Divider */
+.two-column-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 1px;
+  background-color: #aaaadd; /* Faint line color */
+  transform: translateX(-50%);
+  z-index: -1;
+}
+
+/* BuildReadComponent styles */
+.buildTitle {
+  font-size: 3rem;
+  font-weight: var(--font-weight-bold);
+  line-height: 3.3rem;
+  letter-spacing: -0.792px;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.buildDesc {
+  font-size: 1.125rem;
+  font-weight: var(--font-weight-regular);
+  line-height: 27px;
+  margin-bottom: 3rem;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .two-column-section {
+    flex-direction: column;
+    gap: 2rem; /* Adjust for stacked spacing */
+  }
+
+  .column {
+    /* flex: 1; /* Equal width */
+    padding: 1rem; /*Adjust padding*/
+  }
+
+  .two-column-section::before {
+    display: none; /* Hide dividing line on small screens */
+  }
+
+  .column-left,
+  .column-right {
+    text-align: left; /* Center text when stacked */
+  }
+
+  /* Add horizontal divider between stacked columns */
+  .column-left {
+    border-bottom: 1px solid #aaaadd; /* Horizontal line between the columns */
+    padding-bottom: 3.25rem; /* Add some space below the line */
+  }
+
+  .column-right {
+    padding-top: 1.25rem; /* Add some space above the content in the second column */
+  }
+
+  /* BuildReadCompoent styles */
+  .buildTitle {
+    font-size: 1.875rem;
+  }
+  .buildDesc {
+    font-size: 1rem;
+  }
+}

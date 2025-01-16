@@ -16,22 +16,31 @@ body {
   --font-weight-medium: 500;
   --font-weight-bold: 700;
 
+  /* added for the sake of universal btn that needs to maintain white text on hover  */
+  --default-white: #e3f1f4;
+
   --bg-color: #e3f1f4;
   --text-color: #171738;
   --text-color-neutral: #383852;
   --text-color-neutral-border: #a8a8bd;
   --primary-color: #377dff;
+  --shoot-up-arrow: #5d5d78;
   /* --primary-color: #2a2ac7; */
   --icon-color: #2a2ac7;
   --secondary-color: #eaeaea;
 }
 
 [data-theme="dark"] {
+  /* same purpose as in non dark mode above */
+  --default-white: #e3f1f4;
+
   --bg-color: #141c2f;
   --text-color: #fdfdff;
   --text-color-neutral: #fdfdff;
-  --text-color-neutral-border: #fdfdff;
+  --text-color-neutral-border: #a8a8bd;
   --primary-color: #377dff;
   --icon-color: #2a2ac7;
   --secondary-color: #333333;
+
+  --shoot-up-arrow: #fdfdff;
 }
