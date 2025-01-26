@@ -5,7 +5,7 @@ const ContactMeFooter = () => {
   return (
     <div
       style={{
-        height: "300px",
+        // height: "300px",
         paddingTop: "96px",
         paddingBottom: "96px",
         backgroundColor: "var(--text-color)",
